@@ -1,0 +1,55 @@
+/* font-family: "dunkel-sans-expanded-rounded", sans-serif;
+font-weight: 900;
+font-style: normal;
+
+NanumSquareRound
+
+*/
+
+.headerWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+}
+.headerBox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ecebfb;
+}
+
+.headerTitle {
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  height: 35px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.headerButtonWrap {
+  font-family: "NanumSquareRound", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.headerButtonWrap > div {
+  width: 120px;
+  height: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
