@@ -1,6 +1,8 @@
 .mainFrontPageWrap {
   height: max(97svh, 850px);
   width: 100%;
+  color: #ecebfb;
+  font-family: "NanumSquareRound", sans-serif;
 }
 
 .mainFrontPageBox {
@@ -11,7 +13,7 @@
   z-index: -10;
 }
 
-.MainFrontPageImgWrap {
+.mainFrontPageImgWrap {
   height: 100%;
   width: 100%;
 
@@ -25,22 +27,161 @@
   object-fit: cover;
 }
 
-.MainFrontPageGridWrap {
+.mainFrontPageGridWrap {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
   box-sizing: border-box;
 }
-.MainFrontPageGrid {
+.mainFrontPageGrid {
   width: 1320px;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(1fr, 12);
   grid-gap: 20px;
   box-sizing: border-box;
-  border: 1px solid red;
   box-sizing: border-box;
-  /* 여기에 반응형으로 개조하기 */
+  align-items: center;
+}
+.mainFrontPageHeadTextWrap {
+  transform: translateY(40px);
+}
+.mainFrontPageHeadUpperText {
+  opacity: 0.8;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.mainFrontPageHeadMiddleText {
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 120px;
+}
+
+.mainFrontPageHeadMiddleText1,
+.mainFrontPageHeadMiddleText2 > span {
+  height: 120%;
+  line-height: 120%;
+}
+
+.mainFrontPageHeadMiddleText1 > span:first-child {
+  color: #8261ec;
+}
+
+.mainFrontPageHeadMiddleText2 > span:nth-child(2) {
+  color: #8261ec;
+}
+
+.mainFrontPageHeadLowerText1 {
+  opacity: 0.6;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.mainFrontPageHeadLowerText2,
+.mainFrontPageHeadLowerText3 {
+  width: 406px;
+  height: 50px;
+  color: #ecebfbde;
+  box-sizing: border-box;
+  border: 1px solid #ecebfbde;
+  background-image: linear-gradient(84deg, #706e881f 0%, #c99dec1f 100%);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: inset 4px 4px 6px #ecebfb2b, inset -4px -4px 6px #0000006f;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.mainFrontPageHeadLowerText2:hover {
+  border: 1px solid #8261ec;
+  background-color: #ecebfb;
+  color: #8261ec !important;
+  transition: all 0.3s;
+}
+
+.mainFrontPageHeadLowerText3:hover {
+  border: 1px solid #8261ec;
+  background-color: #ecebfb;
+  color: #8261ec !important;
+  transition: all 0.3s;
+}
+
+.mainFrontPageHeadLowerText3 {
+  margin-bottom: 30px;
+}
+
+.mainFrontPageHeadLowerText2Area,
+.mainFrontPageHeadLowerText3Area {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.mainFrontPageHeadLowerText2Area > div:nth-child(2) {
+  letter-spacing: -0.6px;
+  font-size: 18px;
+}
+
+.mainFrontPageHeadLowerText2ImgWrap,
+.mainFrontPageHeadLowerText3ImgWrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mainFrontPageHeadLowerText2ImgWrap > img {
+  object-fit: cover;
+  height: 25px;
+}
+
+.mainFrontPageHeadLowerText3Area {
+  display: flex;
+}
+
+.mainFrontPageHeadLowerText3Area > div:nth-child(2) {
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.mainFrontPageHeadLowerText3ImgWrap > img {
+  object-fit: cover;
+  height: 22px;
+}
+
+.mainFrontPageHeadLowerText4Area {
+  background-color: transparent;
+  color: #ecebfbde;
+  width: 406px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #8261ec;
+  background-image: linear-gradient(84deg, #706e881f 0%, #c99dec1f 100%);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: inset 4px 4px 6px #ecebfb2b, inset -4px -4px 6px #0000006f;
+  font-size: 18px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.mainFrontPageHeadLowerText4Area:hover {
+  background-color: #8261ec;
+  background-image: linear-gradient(84deg, #706e881f 0%, #c99dec1f 100%);
+  box-shadow: inset 4px 4px 6px #ecebfb2b, inset -4px -4px 6px #0000003c;
+  transition: all 0.3s;
 }
