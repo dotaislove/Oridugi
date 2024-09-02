@@ -1,13 +1,43 @@
-.App {
-  text-align: center;
-  color: #ecebfb;
-}
-
 * {
   text-decoration: none;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  color: #ecebfb;
+  height: 100%;
+}
+
 a:focus,
 a:visited,
 a {
   color: inherit;
+}
+
+/* 스크롤바 트랙 (바탕) */
+::-webkit-scrollbar {
+  width: 10px; /* 스크롤바의 너비 */
+}
+
+::-webkit-scrollbar-track {
+  background: #27272c; /* 트랙 배경색 */
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background-color: #ecebfb; /* 스크롤바 색상 */
+  border-radius: 10px;
+  background-clip: content-box; /* 오버레이 효과 */
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8261ec;
+  transition: all 0.3s;
 }

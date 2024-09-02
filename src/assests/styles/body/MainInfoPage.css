@@ -1,0 +1,96 @@
+.mainInfoWrap {
+  background-color: #27272c;
+  height: max(100svh, 900px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.threeOfHearts {
+  position: absolute;
+  object-fit: cover;
+  height: 110px;
+  left: 690px;
+  top: -240px;
+  opacity: 0.8;
+}
+
+.threeOfFootprints {
+  position: absolute;
+  object-fit: cover;
+  height: 143px;
+  top: -90px;
+  left: 1250px;
+  opacity: 0.8;
+}
+
+.threeOfFlowers {
+  position: absolute;
+  object-fit: cover;
+  height: 133px;
+  top: 220px;
+  left: -100px;
+  opacity: 0.8;
+}
+
+.mainInfoTitle {
+  width: 1320px;
+  color: #ecebfb;
+  margin-bottom: 70px;
+}
+
+.mainInfoTitleUpperText {
+  font-size: 24px;
+  font-family: "NanumSquareRound", sans-serif;
+  font-weight: 900;
+  line-height: 130%;
+  opacity: 0.8;
+}
+
+.mainInfoTitleMiddleText {
+  font-size: 80px;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  line-height: 130%;
+}
+
+.mainInfoTitleMiddleText2 {
+  color: #8261ec;
+}
+
+.mainInfoBodyGrid {
+  width: 1320px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 4fr 4fr 4fr;
+  color: #ecebfb;
+  position: relative;
+}
+
+.mainInfoIcons {
+  width: 163px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.mainInfoTextHeader {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "NanumSquareRound", sans-serif;
+  line-height: 130%;
+  opacity: 0.8;
+}
+
+.mainInfoTextBody {
+  font-size: 18px;
+  font-family: "NanumSquareRound", sans-serif;
+  line-height: 140%;
+  opacity: 0.6;
+}
+
+.mainInfoTextBody > div {
+  text-align: justify;
+}

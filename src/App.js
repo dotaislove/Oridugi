@@ -1,13 +1,17 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import MainFrontPage from "./components/body/MainFrontPage";
+import MainInfoPage from "./components/body/MainInfoPage";
+import ScrollBar from "react-perfect-scrollbar";
+import "react-perfect-scrollbar/dist/css/styles.css";
 
 function App() {
   return (
-    <div>
+    <ScrollBar className="app">
       <Header />
       <MainFrontPage />
-    </div>
+      <MainInfoPage />
+    </ScrollBar>
   );
 }
 
