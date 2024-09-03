@@ -11,12 +11,30 @@ NanumSquareRound
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 10;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px #00000000;
 }
+.headerBox.active {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+
+  box-shadow: 0 8px 16px #0000005d;
+}
+
+.headerBox.active::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to bottom, #27272c3a 95%, #ffffff00 100%);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
 .headerBox {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +52,13 @@ NanumSquareRound
   align-items: center;
   justify-content: center;
   margin-left: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerTitle:hover {
+  color: #8261ec;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerButtonWrap {
@@ -52,4 +77,11 @@ NanumSquareRound
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerButtonWrap > div:hover {
+  color: #8261ec;
+  transition: all 0.3s ease-in-out;
 }

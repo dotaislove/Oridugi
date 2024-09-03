@@ -1,6 +1,6 @@
 .mainInfoWrap {
   background-color: #27272c;
-  height: max(100svh, 900px);
+  height: max(100svh, 850px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   position: absolute;
   object-fit: cover;
   height: 133px;
-  top: 220px;
+  top: 260px;
   left: -100px;
   opacity: 0.8;
 }
@@ -48,12 +48,14 @@
   font-weight: 900;
   line-height: 130%;
   opacity: 0.8;
+  letter-spacing: -0.03em;
 }
 
 .mainInfoTitleMiddleText {
   font-size: 80px;
   font-family: "dunkel-sans-expanded-rounded", sans-serif;
   line-height: 130%;
+  letter-spacing: 0.02em;
 }
 
 .mainInfoTitleMiddleText2 {
@@ -72,16 +74,17 @@
 .mainInfoIcons {
   width: 163px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .mainInfoTextHeader {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: "NanumSquareRound", sans-serif;
   line-height: 130%;
   opacity: 0.8;
+  letter-spacing: -0.03em;
 }
 
 .mainInfoTextBody {
@@ -89,6 +92,7 @@
   font-family: "NanumSquareRound", sans-serif;
   line-height: 140%;
   opacity: 0.6;
+  letter-spacing: -0.03em;
 }
 
 .mainInfoTextBody > div {

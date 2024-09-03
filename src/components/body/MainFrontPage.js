@@ -54,11 +54,6 @@ function MainFrontPage() {
                   </div>
                 </a>
               </div>
-              <div className="mainFrontPageHeadLowerText4">
-                <div className="mainFrontPageHeadLowerText4Area">
-                  오리더기 가입 문의글 작성하러 가기
-                </div>
-              </div>
             </div>
           </div>
         </div>

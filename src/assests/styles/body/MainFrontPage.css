@@ -3,6 +3,7 @@
   width: 100%;
   color: #ecebfb;
   font-family: "NanumSquareRound", sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .mainFrontPageBox {
@@ -51,7 +52,8 @@
   opacity: 0.8;
   font-family: "dunkel-sans-expanded-rounded", sans-serif;
   font-size: 24px;
-  line-height: 130%;
+  line-height: 120%;
+  letter-spacing: 0.02em;
 }
 
 .mainFrontPageHeadMiddleText {
@@ -59,6 +61,8 @@
   font-weight: 900;
   font-style: normal;
   font-size: 120px;
+  letter-spacing: 0.02em;
+  line-height: 120%;
 }
 
 .mainFrontPageHeadMiddleText1,
@@ -84,10 +88,11 @@
 }
 
 .mainFrontPageHeadLowerText1 {
-  opacity: 0.6;
-  font-size: 18px;
+  opacity: 0.8;
+  font-size: 24px;
   margin-top: 50px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .mainFrontPageHeadLowerText2,
@@ -96,33 +101,33 @@
   height: 50px;
   color: #ecebfbde;
   box-sizing: border-box;
-  border: 1px solid #ecebfbde;
-  background-image: linear-gradient(84deg, #706e881f 0%, #c99dec1f 100%);
+  border: 2px solid #ecebfb77;
+  background-image: linear-gradient(84deg, #706e882b 0%, #b194c92b 100%);
   border-radius: 5px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   box-shadow: inset 4px 4px 6px #ecebfb2b, inset -4px -4px 6px #0000006f;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   transition: all 0.3s;
   background-color: transparent;
 }
 
 .mainFrontPageHeadLowerText2:hover {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: #ecebfb;
   color: #8261ec !important;
   transition: all 0.3s;
 }
 
 .mainFrontPageHeadLowerText3:hover {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: #ecebfb;
   color: #8261ec !important;
   transition: all 0.3s;
 }
 
 .mainFrontPageHeadLowerText3 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .mainFrontPageHeadLowerText2Area,
@@ -176,15 +181,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: 2px solid #8261ec;
-  background-image: linear-gradient(84deg, #706e881f 0%, #c99dec1f 100%);
+  border: 2px solid #8161ec9f;
+  background-image: linear-gradient(84deg, #706e882b 0%, #b194c92b 100%);
   border-radius: 5px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   box-shadow: inset 4px 4px 6px #ecebfb2b, inset -4px -4px 6px #0000006f;
   font-size: 18px;
   transition: all 0.3s;
-  font-weight: 700;
 }
 
 .mainFrontPageHeadLowerText4Area:hover {
