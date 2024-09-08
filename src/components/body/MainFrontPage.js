@@ -32,7 +32,7 @@ function MainFrontPage() {
             </div>
             <div className="mainFrontPageHeadLowerText">
               <div className="mainFrontPageHeadLowerText1">
-                오리더기의 기타 체널들
+                오리더기의 기타 채널들
               </div>
               <div className="mainFrontPageHeadLowerText2">
                 <a href="https://chzzk.naver.com/9d00372c1cec9544f8d54d7914d797b6">
@@ -50,7 +50,7 @@ function MainFrontPage() {
                     <div className="mainFrontPageHeadLowerText3ImgWrap">
                       <DiscordIcon className="mainFrontDiscordIcon" />
                     </div>
-                    <div>보라더기 오리더기 채널 참가</div>
+                    <div>오리더기 채널 참가</div>
                   </div>
                 </a>
               </div>
