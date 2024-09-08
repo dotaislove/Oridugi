@@ -16,9 +16,7 @@ function Footer({ scrollTop }) {
           <div className="footerLeftGrid1">부대장</div>
           <div className="footerLeftGrid2">보라더기</div>
           <div className="footerLeftGrid3">하우징 위치</div>
-          <div className="footerLeftGrid4">
-            어디서버 어디 모험가 지구 어쩌구
-          </div>
+          <div className="footerLeftGrid4">톤베리 시로가네 20 - 43</div>
           <div className="footerLeftGrid5">
             <div>
               본 웹사이트는 상업적 목적이 아닌 개인 프로젝트 또는 비영리 활동의
@@ -32,12 +30,6 @@ function Footer({ scrollTop }) {
         </div>
         <div className="footerRight">
           <div className="footerRightGrid1"></div>
-          <div className="footerRightGrid2" onClick={handleTitleClick}>
-            <Link to="/">갤러리</Link>
-          </div>
-          <div className="footerRightGrid3" onClick={handleTitleClick}>
-            <Link to="/">게시판</Link>
-          </div>
           <div className="footerRightGrid4" onClick={handleTitleClick}>
             <Link to="signIn">가입문의</Link>
           </div>

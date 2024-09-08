@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../assests/styles/body/MainCallToActionArea.css";
 import MainActionBG from "../../assests/images/MainCallToActionAreaBG.jpg";
 import Crown from "../../assests/images/Crown.png";
@@ -32,7 +33,7 @@ function MainCallToActionArea() {
             <span>에서</span>
           </div>
           <div className="mainActionTitle2">
-            <span>새끼 오리를</span>
+            <span>오리를</span>
             <span> 모집중!</span>
           </div>
         </div>
@@ -60,8 +61,9 @@ function MainCallToActionArea() {
             <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. :)</div>
           </div>
         </div>
+
         <div className="mainActionCallToActionButton">
-          가입 문의글 작성하러 가기
+          <Link to="signIn">가입 문의글 작성하러 가기</Link>
         </div>
       </div>
     </div>

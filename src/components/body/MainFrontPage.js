@@ -40,7 +40,7 @@ function MainFrontPage() {
                     <div className="mainFrontPageHeadLowerText2ImgWrap">
                       <ChichizickIcon className="mainFrontChichizickIcon" />
                     </div>
-                    <div>보라더기 치치직 채널 바로가기</div>
+                    <div>보라더기 치지직 채널 바로가기</div>
                   </div>
                 </a>
               </div>
@@ -50,7 +50,7 @@ function MainFrontPage() {
                     <div className="mainFrontPageHeadLowerText3ImgWrap">
                       <DiscordIcon className="mainFrontDiscordIcon" />
                     </div>
-                    <div>보라더기 디스코드 체널 참가</div>
+                    <div>보라더기 오리더기 채널 참가</div>
                   </div>
                 </a>
               </div>
