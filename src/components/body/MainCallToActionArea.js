@@ -61,10 +61,12 @@ function MainCallToActionArea() {
             <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. :)</div>
           </div>
         </div>
-        <div className="mainActionCallToActionButton">
-          <DiscordIcon className="mainActionCallToDiscordIcon" /> 오리더기 가입
-          문의하기
-        </div>
+        <a href="https://discord.gg/MN7M2C6Yt7">
+          <div className="mainActionCallToActionButton">
+            <DiscordIcon className="mainActionCallToDiscordIcon" /> 오리더기
+            가입 문의하기
+          </div>
+        </a>
       </div>
     </div>
   );
