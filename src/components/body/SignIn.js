@@ -128,7 +128,7 @@ function SignIn({ scrollTop }) {
               <span> 언제나 새로운</span>
             </div>
             <div className="signInTitle2">
-              <span>새끼 오리의 가입을 </span>
+              <span>오리의 가입을 </span>
               <span>환영합니다!</span>
             </div>
           </div>
