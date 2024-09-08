@@ -61,10 +61,11 @@ function MainCallToActionArea() {
             <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. :)</div>
           </div>
         </div>
-
-        <div className="mainActionCallToActionButton">
-          <Link to="signIn">가입 문의글 작성하러 가기</Link>
-        </div>
+        <Link to="signIn">
+          <div className="mainActionCallToActionButton">
+            가입 문의글 작성하러 가기
+          </div>
+        </Link>
       </div>
     </div>
   );
