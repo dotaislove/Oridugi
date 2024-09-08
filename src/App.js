@@ -9,7 +9,6 @@ import Footer from "./components/footer/Footer";
 
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import SignIn from "./components/body/SignIn";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -43,14 +42,6 @@ function App() {
                 <MainFrontPage />
                 <MainInfoPage />
                 <MainCallToActionArea />
-              </>
-            }
-          />
-          <Route
-            path="signIn"
-            element={
-              <>
-                <SignIn scrollTop={scrollTop} />
               </>
             }
           />

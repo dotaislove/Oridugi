@@ -1,14 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../assests/styles/footer/Footer.css";
 import { ReactComponent as ChichizickIcon } from "../../assests/images/icons/chichizickIcon.svg";
 import { ReactComponent as DiscordIcon } from "../../assests/images/icons/discordIcon.svg";
 
-function Footer({ scrollTop }) {
-  const handleTitleClick = () => {
-    scrollTop(); // 부모 컴포넌트의 scrollY 값을 0으로 리셋
-  };
-
+function Footer() {
   return (
     <div className="footerWrap">
       <div className="footerFlex">
@@ -30,9 +25,6 @@ function Footer({ scrollTop }) {
         </div>
         <div className="footerRight">
           <div className="footerRightGrid1"></div>
-          <div className="footerRightGrid4" onClick={handleTitleClick}>
-            <Link to="signIn">가입문의</Link>
-          </div>
           <div className="footerRightGrid5"></div>
           <div className="footerRightGrid6">
             <div>

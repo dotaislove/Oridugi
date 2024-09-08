@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../assests/styles/body/MainCallToActionArea.css";
 import MainActionBG from "../../assests/images/MainCallToActionAreaBG.jpg";
 import Crown from "../../assests/images/Crown.png";
 import Diamond from "../../assests/images/Diamond.png";
 import FourHearts from "../../assests/images/FourHearts.png";
 import LineWithHeart from "../../assests/images/LineWithHeart.png";
+import { ReactComponent as DiscordIcon } from "../../assests/images/icons/discordIcon.svg";
 
 function MainCallToActionArea() {
   return (
@@ -61,11 +61,10 @@ function MainCallToActionArea() {
             <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. :)</div>
           </div>
         </div>
-        <Link to="signIn">
-          <div className="mainActionCallToActionButton">
-            가입 문의글 작성하러 가기
-          </div>
-        </Link>
+        <div className="mainActionCallToActionButton">
+          <DiscordIcon className="mainActionCallToDiscordIcon" /> 오리더기 가입
+          문의하기
+        </div>
       </div>
     </div>
   );

@@ -21,11 +21,6 @@ function Header({ scrollY, scrollTop }) {
         <div className="headerTitle" onClick={handleTitleClick}>
           <Link to="/">오리더기</Link>
         </div>
-        <div className="headerButtonWrap" onClick={handleTitleClick}>
-          <div className="inquiry" onClick={handleTitleClick}>
-            <Link to="signIn">가입문의</Link>
-          </div>
-        </div>
       </div>
     </div>
   );
