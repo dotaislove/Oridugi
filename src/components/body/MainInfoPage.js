@@ -43,7 +43,7 @@ function MainInfoPage() {
           <div className="mainInfoTextHeader ">소수 인원의 단합화!</div>
           <div className="mainInfoTextBody">
             <div>많은 인원은 필요치 않습니다. 서로 긴밀한 관계가</div> 지속될 수
-            있게 소수의 맴버로 모집하고 있어요 : )
+            있게 소수의 멤버로 모집하고 있어요 : )
           </div>
         </div>
         <div>
