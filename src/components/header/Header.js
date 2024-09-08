@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../../assests/styles/header/Header.css";
+import { Link } from "react-router-dom";
 
-function Header({ scrollY, onResetScrollY }) {
+function Header({ scrollY, scrollTop }) {
   const [onScrollTrigger, setOnScrollTrigger] = useState(false);
   useEffect(() => {
     if (scrollY > 50) {
@@ -12,18 +13,24 @@ function Header({ scrollY, onResetScrollY }) {
   }, [scrollY]);
 
   const handleTitleClick = () => {
-    onResetScrollY(); // 부모 컴포넌트의 scrollY 값을 0으로 리셋
+    scrollTop(); // 부모 컴포넌트의 scrollY 값을 0으로 리셋
   };
   return (
     <div className="headerWrap">
       <div className={`headerBox ${onScrollTrigger ? "active" : ""}`}>
         <div className="headerTitle" onClick={handleTitleClick}>
-          오리더기
+          <Link to="/">오리더기</Link>
         </div>
-        <div className="headerButtonWrap">
-          <div className="gallery">갤러리</div>
-          <div className="thread">게시판</div>
-          <div className="inquiry">가입문의</div>
+        <div className="headerButtonWrap" onClick={handleTitleClick}>
+          <div className="gallery">
+            <Link to="/">갤러리</Link>
+          </div>
+          <div className="thread" onClick={handleTitleClick}>
+            <Link to="/">게시판</Link>
+          </div>
+          <div className="inquiry" onClick={handleTitleClick}>
+            <Link to="signIn">가입문의</Link>
+          </div>
         </div>
       </div>
     </div>

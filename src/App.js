@@ -1,40 +1,63 @@
 import React, { useCallback, useRef, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
 import MainFrontPage from "./components/body/MainFrontPage";
 import MainInfoPage from "./components/body/MainInfoPage";
 import MainCallToActionArea from "./components/body/MainCallToActionArea";
+import Footer from "./components/footer/Footer";
 
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
+import SignIn from "./components/body/SignIn";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
-  const scrollbarRef = useRef(null); // PerfectScrollbar 참조
+  const ps = useRef();
 
   const handleScrollY = useCallback((container) => {
     const scrollPosition = container.scrollTop;
     setScrollY(scrollPosition);
   }, []);
 
-  const resetScrollY = () => {
-    if (scrollbarRef.current) {
-      scrollbarRef.current.scrollTop = 0; // PerfectScrollbar의 스크롤 위치를 0으로 설정
-      setScrollY(0); // 상태도 0으로 업데이트
+  function scrollTop() {
+    const curr = ps.current;
+    if (curr) {
+      curr.scrollTop = 0;
     }
-  };
+  }
 
   return (
-    <PerfectScrollbar
-      className="app-scroll"
-      onScrollY={handleScrollY}
-      ref={scrollbarRef}
-    >
-      <Header scrollY={scrollY} onResetScrollY={resetScrollY} />
-      <MainFrontPage />
-      <MainInfoPage />
-      <MainCallToActionArea />
-    </PerfectScrollbar>
+    <Router>
+      <PerfectScrollbar
+        className="app-scroll"
+        onScrollY={handleScrollY}
+        containerRef={(el) => (ps.current = el)}
+      >
+        <Header scrollY={scrollY} scrollTop={scrollTop} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <MainFrontPage />
+                <MainInfoPage />
+                <MainCallToActionArea />
+              </>
+            }
+          />
+          <Route
+            path="signIn"
+            element={
+              <>
+                <SignIn scrollTop={scrollTop} />
+              </>
+            }
+          />
+        </Routes>
+        <Footer scrollTop={scrollTop} />
+      </PerfectScrollbar>
+    </Router>
   );
 }
 

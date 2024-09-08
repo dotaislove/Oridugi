@@ -1,8 +1,8 @@
 import React from "react";
 import "../../assests/styles/body/MainFrontPage.css";
 import MainFrontPageBackgroundImg from "../../assests/images/MainFrontPageBackgroundImg.jpg";
-import ChichizickIcon from "../../assests/images/icons/chichizickIcon.svg";
-import DiscordIcon from "../../assests/images/icons/discordIcon.svg";
+import { ReactComponent as ChichizickIcon } from "../../assests/images/icons/chichizickIcon.svg";
+import { ReactComponent as DiscordIcon } from "../../assests/images/icons/discordIcon.svg";
 
 function MainFrontPage() {
   return (
@@ -38,7 +38,7 @@ function MainFrontPage() {
                 <a href="https://chzzk.naver.com/9d00372c1cec9544f8d54d7914d797b6">
                   <div className="mainFrontPageHeadLowerText2Area">
                     <div className="mainFrontPageHeadLowerText2ImgWrap">
-                      <img src={ChichizickIcon} alt="Chichizick Icon"></img>
+                      <ChichizickIcon className="mainFrontChichizickIcon" />
                     </div>
                     <div>보라더기 치치직 채널 바로가기</div>
                   </div>
@@ -48,7 +48,7 @@ function MainFrontPage() {
                 <a href="https://discord.gg/MN7M2C6Yt7">
                   <div className="mainFrontPageHeadLowerText3Area">
                     <div className="mainFrontPageHeadLowerText3ImgWrap">
-                      <img src={DiscordIcon} alt="Discord Icon"></img>
+                      <DiscordIcon className="mainFrontDiscordIcon" />
                     </div>
                     <div>보라더기 디스코드 체널 참가</div>
                   </div>
