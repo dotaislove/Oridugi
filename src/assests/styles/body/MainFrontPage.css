@@ -293,6 +293,10 @@
 }
 
 @media (pointer: coarse) {
+  .mainFrontPageWrap,
+  .mainFrontPageBox {
+    height: max(97dvh);
+  }
   .mainFrontPageHeadMiddleText {
     margin-bottom: 60px;
   }
@@ -308,7 +312,7 @@
 
 @media (pointer: coarse) and (max-width: 600px) {
   .mainFrontPageHeadTextWrap {
-    transform: translateY(-20%);
+    transform: translateY(0%);
   }
   .mainFrontPageBG {
     transform: translateX(-70%);

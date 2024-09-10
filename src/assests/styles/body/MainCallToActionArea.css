@@ -227,6 +227,13 @@
   }
 }
 
+@media (pointer: coarse) {
+  .mainActionWrap,
+  .mainActionBGWrap {
+    height: max(100dvh);
+  }
+}
+
 @media (pointer: coarse) and (max-width: 600px) {
   .mainActionGrid {
     transform: translateY(-10%);
