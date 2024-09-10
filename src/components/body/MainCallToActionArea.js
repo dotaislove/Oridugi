@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../../assests/styles/body/MainCallToActionArea.css";
 import MainActionBG from "../../assests/images/MainCallToActionAreaBG.jpg";
 import Crown from "../../assests/images/Crown.png";
@@ -8,13 +8,55 @@ import LineWithHeart from "../../assests/images/LineWithHeart.png";
 import { ReactComponent as DiscordIcon } from "../../assests/images/icons/discordIcon.svg";
 
 function MainCallToActionArea() {
+  const callToActionImgRef = useRef(null);
+  const callToActionImgWrapRef = useRef(null);
+
+  useEffect(() => {
+    function callToActionResizeImg() {
+      const callToActionImg = callToActionImgRef.current;
+      const callToActionImgWrap = callToActionImgWrapRef.current;
+
+      if (!callToActionImg || !callToActionImgWrap) {
+        return; // 이미지나 래퍼가 아직 렌더링되지 않았다면 함수 종료
+      }
+
+      const callToActionContainerAspect =
+        callToActionImgWrap.offsetWidth / callToActionImgWrap.offsetHeight;
+      const callToActionImgAspect =
+        callToActionImg.naturalWidth / callToActionImg.naturalHeight;
+
+      if (callToActionImgAspect > callToActionContainerAspect) {
+        callToActionImg.style.width = "auto";
+        callToActionImg.style.height = "100%";
+      } else {
+        callToActionImg.style.width = "100%";
+        callToActionImg.style.height = "auto";
+      }
+    }
+    const callToActionImg = callToActionImgRef.current;
+    if (callToActionImg) {
+      callToActionImg.addEventListener("load", callToActionResizeImg);
+      if (callToActionImg.complete) {
+        callToActionResizeImg();
+      }
+    }
+    window.addEventListener("resize", callToActionResizeImg);
+
+    return () => {
+      if (callToActionImg) {
+        callToActionImg.removeEventListener("load", callToActionResizeImg);
+      }
+      window.removeEventListener("resize", callToActionResizeImg);
+    };
+  }, []);
   return (
     <div className="mainActionWrap">
-      <div className="mainActionBGWrap">
+      <div className="mainActionBGWrap" ref={callToActionImgWrapRef}>
         <img
           className="mainActionBG"
           alt="MainActionBG"
           src={MainActionBG}
+          ref={callToActionImgRef}
         ></img>
       </div>
       <div className="mainActionGrid">
@@ -26,7 +68,7 @@ function MainCallToActionArea() {
         <img alt="Crown" className="Crown" src={Crown}></img>
         <img alt="Diamond" className="Diamond" src={Diamond}></img>
         <img alt="FourHearts" className="FourHearts" src={FourHearts}></img>
-        <div className="mainActionTitle">
+        <div className="mainActionTitle over800px">
           <div className="mainActionTitle1">
             <span>현재</span>
             <span> 오리더기</span>
@@ -37,12 +79,24 @@ function MainCallToActionArea() {
             <span> 모집중!</span>
           </div>
         </div>
-        <div className="mainActionText">
+        <div className="mainActionTitle less800px">
+          <div className="mainActionTitle1">
+            <div>
+              <span>오리더기</span>
+              <span> 에서</span>
+            </div>
+          </div>
+          <div className="mainActionTitle2">
+            <span>오리를</span>
+            <span> 모집중!</span>
+          </div>
+        </div>
+        <div className="mainActionText over800px">
           <div className="mainActionText1">
-            <div>안녕하세요 오리더기의 창설 부대장인 보라더기 입니다. :)</div>
+            <div>안녕하세요 오리더기의 창설 부대장인 보라더기 입니다. : )</div>
             <div>
               컨텐츠 공유를 위해 창설한 부대지만 현재는 이에 더 해 ‘소통’ 까지
-              발전하고 있습니다. :)
+              발전하고 있습니다. : )
             </div>
           </div>
           <div className="mainActionText2">
@@ -51,14 +105,53 @@ function MainCallToActionArea() {
               부디 오리더기의
             </div>
             <div>
-              문을 두드려 주세요. 저 포함 모든 부대원들이 기다리고 있겠습니다.
-              :)
+              문을 두드려 주세요. 저 포함 모든 부대원들이 기다리고 있겠습니다. :
+              )
             </div>
             <div>
               오리더기의 부대원이 된 이상 누구 한분이라도 소외되지 않고 분위기에
               잘 녹아들어
             </div>
-            <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. :)</div>
+            <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. : )</div>
+          </div>
+        </div>
+        <div className="mainActionText less800px over600px">
+          <div className="mainActionText1">
+            <div>안녕하세요 오리더기의 창설 부대장인 보라더기 입니다. : )</div>
+            <div>
+              컨텐츠 공유를 위해 창설한 부대지만 현재는 이에 더 해 ‘소통’ 까지
+              <div>발전하고 있습니다. : )</div>
+            </div>
+          </div>
+          <div className="mainActionText2">
+            <div>
+              본인이 즐기는 컨텐츠를 적극적인 소통과 함께 ‘공유’ 하고 싶으시다면
+            </div>
+            <div>
+              부디 오리더기의 문을 두드려 주세요. 저 포함 모든 부대원들이
+            </div>
+            기다리고 있겠습니다. 오리더기의 부대원이 된 이상 누구 한분이라도
+            <div>
+              소외되지 않고 분위기에 잘 녹아들어 재마있게 게임할 수 있도록
+            </div>
+            <div> 돕겠습니다. 감사합니다. : )</div>
+          </div>
+        </div>
+        <div className="mainActionText less800px less600px">
+          <div className="mainActionText1">
+            <div>
+              오리더기의 창설 부대장인 보라더기 입니다. &nbsp;컨텐츠 공유를 위해
+              창설한 부대지만 현재는 ‘소통’ 까지 발전하고 있습니다. : )
+            </div>
+          </div>
+          <div className="mainActionText2">
+            <div>
+              본인이 즐기는 컨텐츠를 적극적인 소통과 함께 ‘공유’ 하고 싶으시다면
+              부디 오리더기의 문을 두드려 주세요.&nbsp;저 포함 모든 부대원들이
+              기다리고 있겠습니다.&nbsp;오리더기의 부대원이 된 이상 누구
+              한분이라도 소외되지 않고 분위기에 잘 녹아들어 재마있게 게임할 수
+              있도록 돕겠습니다.&nbsp;감사합니다. : )
+            </div>
           </div>
         </div>
         <a href="https://discord.gg/MN7M2C6Yt7">

@@ -28,3 +28,9 @@ a:visited,
 a {
   color: inherit;
 }
+
+@media (pointer: coarse) {
+  .ps__thumb-y {
+    display: none;
+  }
+}

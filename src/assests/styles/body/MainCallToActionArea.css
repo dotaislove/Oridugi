@@ -1,5 +1,5 @@
 .mainActionWrap {
-  height: max(100svh, 850px);
+  height: max(100dvh, 850px);
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -10,13 +10,15 @@
 
 .mainActionBGWrap {
   position: absolute;
-  height: max(100svh, 850px);
+  width: 100%;
+  height: max(100dvh, 850px);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .mainActionBG {
   object-fit: cover;
-  width: 100%;
   z-index: -1;
 }
 
@@ -28,30 +30,30 @@
 
 .LineWithHeart {
   position: absolute;
-  left: 1050px;
-  top: -160px;
-  opacity: 0.8;
+  left: calc(70%);
+  top: calc(-50% + 80px);
+  opacity: 0.4;
 }
 
 .Crown {
   position: absolute;
   top: -100px;
   left: 630px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .Diamond {
   position: absolute;
   top: 130px;
   left: -250px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .FourHearts {
   position: absolute;
   top: 250px;
   left: 600px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .mainActionTitle {
@@ -122,4 +124,117 @@
   object-fit: cover;
   height: 22px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1820px) {
+  .Diamond {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .LineWithHeart {
+    display: none;
+  }
+
+  .Diamond {
+    display: block;
+  }
+
+  .mainActionGrid {
+    width: 824px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .Diamond {
+    display: none;
+  }
+  .FourHearts {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainActionGrid {
+    width: 700px;
+  }
+
+  .mainActionTitle {
+    font-size: 60px;
+  }
+
+  .Crown {
+    left: 470px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainActionGrid {
+    width: 480px;
+  }
+
+  .mainActionTitle {
+    font-size: 75px;
+  }
+
+  .mainActionTitle2 > span {
+    letter-spacing: -0.02rem;
+  }
+
+  .Crown {
+    left: 430px;
+  }
+
+  .mainActionTitle1 > div > span {
+    color: #8261ec;
+  }
+
+  .mainActionText {
+    text-align: justify;
+  }
+
+  .mainActionCallToActionButton {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainActionGrid {
+    width: 100%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
+
+  .mainActionTitle {
+    font-size: 13vw;
+  }
+  .mainActionTitle > div > span {
+    letter-spacing: -0.15rem;
+  }
+  .mainActionTitle1 > div > span:nth-child(2) {
+    color: #ecebfb;
+  }
+}
+
+@media (pointer: coarse) {
+  .mainActionCallToActionButton {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Crown {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) and (max-width: 600px) {
+  .mainActionGrid {
+    transform: translateY(-10%);
+  }
+
+  .mainActionBG {
+    transform: translateX(6%);
+  }
 }

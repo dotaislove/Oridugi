@@ -1,6 +1,6 @@
 .mainInfoWrap {
   background-color: #27272c;
-  height: max(100svh, 850px);
+  height: max(100dvh, 850px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   height: 110px;
   left: 690px;
   top: -240px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .threeOfFootprints {
@@ -24,7 +24,7 @@
   height: 143px;
   top: -90px;
   left: 1250px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .threeOfFlowers {
@@ -33,7 +33,7 @@
   height: 133px;
   top: 260px;
   left: -100px;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .mainInfoTitle {
@@ -67,6 +67,7 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: auto;
   color: #ecebfb;
   position: relative;
 }
@@ -90,11 +91,251 @@
 .mainInfoTextBody {
   font-size: 18px;
   font-family: "NanumSquareRound", sans-serif;
-  line-height: 140%;
-  opacity: 0.6;
+  line-height: 150%;
+  opacity: 0.8;
   letter-spacing: -0.03em;
 }
 
 .mainInfoTextBody > div {
   text-align: justify;
+}
+
+.mainInfoTextBody > div:first-child {
+  display: block;
+}
+
+.mainInfoTextBody > div:nth-child(2) {
+  display: none;
+}
+
+.mainInfoTextBody > div:nth-child(3) {
+  display: none;
+}
+
+.mainInfoTextBody > div:nth-child(4) {
+  display: none;
+}
+
+@media screen and (max-width: 1520px) {
+  .mainInfoTitle {
+    width: 824px;
+  }
+
+  .mainInfoBodyGrid {
+    width: 824px;
+  }
+
+  .threeOfFootprints {
+    height: 143px;
+    top: -50px;
+    left: 850px;
+  }
+  .mainInfoIcons {
+    width: 140px;
+  }
+
+  .mainInfoTextHeader {
+    font-size: 18px;
+  }
+
+  .mainInfoTextBody {
+    font-size: 16px;
+  }
+
+  .mainInfoTextBody > div:first-child {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(2) {
+    display: block;
+  }
+
+  .mainInfoTextBody > div:nth-child(3) {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .threeOfFlowers {
+    display: none;
+  }
+  .threeOfFootprints {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainInfoTitleUpperText {
+    font-size: 18px;
+  }
+
+  .mainInfoTitleMiddleText {
+    font-size: 60px;
+  }
+
+  .mainInfoTitle {
+    width: 700px;
+  }
+
+  .threeOfHearts {
+    left: 530px;
+  }
+
+  .mainInfoBodyGrid {
+    width: 700px;
+  }
+
+  .threeOfFlowers {
+    display: block;
+  }
+
+  .threeOfFootprints {
+    display: block;
+    left: 700px;
+  }
+
+  .mainInfoTextBody > div:first-child {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(2) {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(3) {
+    display: block;
+    text-align: justify;
+    padding-right: 10px;
+  }
+
+  .mainInfoTextBody > div:nth-child(4) {
+    display: none;
+  }
+
+  .mainInfoTextLetterSpaceing {
+    letter-spacing: -0.05em;
+  }
+}
+@media screen and (max-width: 920px) {
+  .threeOfFlowers {
+    display: none;
+  }
+
+  .threeOfFootprints {
+    display: none;
+    left: 700px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainInfoWrap {
+    overflow: hidden;
+    height: auto;
+    padding: 150px 0px 110px;
+  }
+  .mainInfoTitleMiddleText {
+    font-size: 80px;
+  }
+
+  .threeOfHearts {
+    left: 440px;
+    top: -360px;
+  }
+
+  .threeOfFlowers {
+    display: block;
+    top: 92%;
+  }
+
+  .threeOfFootprints {
+    display: block;
+    top: 30%;
+    left: 440px;
+  }
+
+  .mainInfoBodyGrid {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .mainInfoTitle {
+    width: 480px;
+  }
+
+  .mainInfoIcons {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+
+  .mainInfoTextHeader {
+    margin-bottom: 10px;
+  }
+
+  .mainInfoBodyGrid {
+    width: 480px;
+  }
+
+  .mainInfoTextBody > div:first-child {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(2) {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(3) {
+    display: none;
+  }
+
+  .mainInfoTextBody > div:nth-child(4) {
+    display: block;
+  }
+
+  .mainInfoMarginBottom {
+    margin-bottom: 40px;
+  }
+  .mainInfoMarginBottom > .over600px {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 690px) {
+  .threeOfFlowers {
+    display: none;
+    top: 92%;
+  }
+
+  .threeOfFootprints {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainInfoTitle {
+    width: 100%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
+
+  .mainInfoBodyGrid {
+    width: 100%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
+
+  .mainInfoIcons {
+    width: 140px;
+  }
+  .mainInfoTitleMiddleText {
+    font-size: 14vw;
+  }
+
+  .mainInfoMarginBottom > .less600px {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .threeOfHearts {
+    display: none;
+  }
 }

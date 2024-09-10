@@ -20,14 +20,14 @@ NanumSquareRound
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: all 0.3s;
-
+  background-image: linear-gradient(to bottom, #1314155e 95%, #ffffff00 100%);
   box-shadow: 0 8px 16px #00000023;
 }
 
 .headerBox.active::before {
   position: absolute;
   content: "";
-  background-image: linear-gradient(to bottom, #1314154d 95%, #ffffff00 100%);
+  box-shadow: 0 8px 16px #00000023;
   pointer-events: none;
   transition: all 0.3s;
 }
@@ -48,7 +48,6 @@ NanumSquareRound
   font-size: 18px;
   height: 35px;
   width: 100px;
-
   margin-left: 40px;
   cursor: pointer;
   transition: all 0.3s;
@@ -98,4 +97,21 @@ NanumSquareRound
 .headerButtonWrap > div:hover {
   color: #8261ec;
   transition: all 0.3s;
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+  .headerTitle {
+    width: auto;
+  }
+}
+
+@media (pointer: coarse) and (max-width: 600px) {
+  .headerWrap {
+    display: None;
+  }
 }
