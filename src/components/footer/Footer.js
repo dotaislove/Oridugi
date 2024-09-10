@@ -23,7 +23,7 @@ function Footer() {
             </div>
           </div>
           <div className="footerLeftGrid5 less600px">
-            <div>
+            <div className="footerLineHeight">
               본 웹사이트는 상업적 목적이 아닌 개인 프로젝트 또는 비영리 활동의
               일환으로 운영됩니다. 모든 콘텐츠는 정보 제공을 위해 제작되었으며,
               상업적 이용은 의도하지 않았음을 알려드립니다.

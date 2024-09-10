@@ -194,7 +194,6 @@
 
   .mainActionCallToActionButton {
     width: 100%;
-    height: 60px;
   }
 }
 
@@ -219,7 +218,6 @@
 @media (pointer: coarse) {
   .mainActionCallToActionButton {
     width: 100%;
-    height: 60px;
   }
 }
 
