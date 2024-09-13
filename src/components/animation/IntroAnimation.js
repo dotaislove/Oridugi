@@ -65,26 +65,34 @@ function IntroAnimation({ onIntroAnimationComplete }) {
           }}
           style={{ position: "relative" }}
         >
-          <DuckAnimation
-            className="largeDuck duck1"
-            alt="Large Duck"
-            src={LargeDuck}
-          />
-          <DuckAnimation
-            className="smallDuck duck2"
-            alt="small Duck"
-            src={SmallDuck}
-          />
-          <DuckAnimation
-            className="mediumDuck duck3"
-            alt="medium Duck"
-            src={MediumDuck}
-          />
-          <DuckAnimation
-            className="smallDuck duck4"
-            alt="small Duck"
-            src={SmallDuck}
-          />
+          <div className="duck1Wrap">
+            <DuckAnimation
+              className="largeDuck duck1"
+              alt="Large Duck"
+              src={LargeDuck}
+            />
+          </div>
+          <div className="duck2Wrap">
+            <DuckAnimation
+              className="smallDuck duck2"
+              alt="small Duck"
+              src={SmallDuck}
+            />
+          </div>
+          <div className="duck3Wrap">
+            <DuckAnimation
+              className="mediumDuck duck3"
+              alt="medium Duck"
+              src={MediumDuck}
+            />
+          </div>
+          <div className="duck4Wrap">
+            <DuckAnimation
+              className="smallDuck duck4"
+              alt="small Duck"
+              src={SmallDuck}
+            />
+          </div>
         </motion.div>
         <motion.div
           className="introAniamtionLoadingBar"

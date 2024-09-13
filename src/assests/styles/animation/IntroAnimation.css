@@ -34,22 +34,54 @@
   position: relative;
   transform: translateX(-50px);
   height: 80px;
+  width: 100%;
 }
 
+.duck1Wrap {
+  width: 80px;
+  height: 80px;
+  margin-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .duck1 {
   width: 80px;
+}
+
+.duck2Wrap {
+  width: 42px;
+  height: 80px;
   margin-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .duck2 {
   width: 42px;
-  margin-right: 35px;
   margin-bottom: 3px;
+}
+
+.duck3Wrap {
+  width: 52px;
+  margin-right: 35px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .duck3 {
   width: 52px;
-  margin-right: 35px;
+}
+
+.duck4Wrap {
+  width: 42px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .duck4 {
@@ -135,20 +167,41 @@
     padding: 0px 50px;
   }
 
+  .duck1Wrap {
+    width: 60px;
+    height: 80px;
+    margin-right: 25px;
+  }
+
   .duck1 {
     width: 60px;
+  }
+
+  .duck2Wrap {
+    width: 30px;
+    height: 80px;
     margin-right: 25px;
   }
 
   .duck2 {
     width: 30px;
-    margin-right: 25px;
+
     margin-bottom: 3px;
+  }
+
+  .duck3Wrap {
+    width: 36px;
+    height: 80px;
+    margin-right: 25px;
   }
 
   .duck3 {
     width: 36px;
-    margin-right: 25px;
+  }
+
+  .introAnimationDuckWrap {
+    width: 30px;
+    height: 80px;
   }
 
   .duck4 {
