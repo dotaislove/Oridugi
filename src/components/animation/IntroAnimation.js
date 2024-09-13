@@ -114,7 +114,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
           className="introAnimationTextWrap"
           animate={{
             opacity: [0, 1, 1, 0], // opacity 변화
-            x: [50, 0, 0, -50], // x축 이동
+            x: [50, 10, 10, -50], // x축 이동
           }}
           transition={{
             duration: 8, // 전체 애니메이션 지속 시간
