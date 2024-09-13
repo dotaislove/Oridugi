@@ -9,9 +9,12 @@ import Footer from "./components/footer/Footer";
 
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
+import IntroAnimation from "./components/animation/IntroAnimation";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
+  const [onIntroAnimation, setOnIntroAnimation] = useState(true);
+
   const ps = useRef();
 
   const handleScrollY = useCallback((container) => {
@@ -22,12 +25,33 @@ function App() {
   function scrollTop() {
     const curr = ps.current;
     if (curr) {
-      curr.scrollTop = 0;
+      const startPosition = curr.scrollTop;
+      const duration = 300;
+      const startTime = performance.now();
+
+      function animateScroll(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        const scrollPosition = startPosition * (1 - progress);
+
+        curr.scrollTop = scrollPosition;
+
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        }
+      }
+
+      requestAnimationFrame(animateScroll);
     }
   }
 
   return (
     <Router>
+      {onIntroAnimation && (
+        <IntroAnimation
+          onIntroAnimationComplete={() => setOnIntroAnimation(false)}
+        />
+      )}
       <PerfectScrollbar
         className="app-scroll"
         onScrollY={handleScrollY}
@@ -39,9 +63,12 @@ function App() {
             path="/"
             element={
               <>
-                <MainFrontPage />
-                <MainInfoPage />
-                <MainCallToActionArea />
+                <MainFrontPage
+                  scrollY={scrollY}
+                  onIntroAnimation={onIntroAnimation}
+                />
+                <MainInfoPage scrollY={scrollY} ps={ps} />
+                <MainCallToActionArea scrollY={scrollY} ps={ps} />
               </>
             }
           />

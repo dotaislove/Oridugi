@@ -1,0 +1,166 @@
+.introAnimationWrap {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100dvh;
+  background-color: #131415;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introAnimationBox {
+  height: 200px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.introAnimationBoxWelcome {
+  display: none;
+  font-size: 24px;
+  color: #ecebfb;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.introAnimationDuckWrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+}
+
+.duck1 {
+  width: 80px;
+  margin-right: 35px;
+}
+
+.duck2 {
+  width: 42px;
+  margin-right: 35px;
+  margin-bottom: 3px;
+}
+
+.duck3 {
+  width: 52px;
+  margin-right: 35px;
+}
+
+.duck4 {
+  width: 42px;
+  margin-bottom: 5px;
+}
+
+.introAniamtionLoadingBar {
+  width: 100%;
+  background-color: #ecebfb;
+  height: 6px;
+  border-radius: 6px;
+  margin-top: 20px;
+  position: relative;
+  opacity: 0;
+}
+
+.introAniamtionLoadingBarInnerBox {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  z-index: 2;
+  background-color: #8261ec;
+  border-radius: 6px;
+}
+
+.introAnimationTextWrap {
+  display: flex;
+  justify-content: center;
+  transform: translateX(10px);
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.introAnimationText {
+  font-size: 24px;
+  color: #ecebfb;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+
+  text-align: center;
+  margin-right: 5px;
+  letter-spacing: 0.03em;
+}
+
+.introAnimationTextwrap1 {
+  display: flex;
+}
+
+.introAnimationTextDot1,
+.introAnimationTextDot2,
+.introAnimationTextDot3 {
+  height: 100%;
+  width: 5px;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+  color: #ecebfb;
+  margin-right: 5px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.introAnimationWelcome {
+  opacity: 0;
+  display: none;
+  font-size: 24px;
+  color: #ecebfb;
+  font-family: "dunkel-sans-expanded-rounded", sans-serif;
+
+  text-align: center;
+  margin-right: 5px;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 450px) {
+  .introAnimationBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 50px;
+  }
+
+  .duck1 {
+    width: 60px;
+    margin-right: 25px;
+  }
+
+  .duck2 {
+    width: 30px;
+    margin-right: 25px;
+    margin-bottom: 3px;
+  }
+
+  .duck3 {
+    width: 36px;
+    margin-right: 25px;
+  }
+
+  .duck4 {
+    width: 30px;
+    margin-bottom: 5px;
+  }
+
+  .introAniamtionLoadingBar {
+    margin-top: 10px;
+  }
+
+  .introAnimationText {
+    font-size: 18px;
+  }
+
+  .introAnimationWelcome {
+    font-size: 18px;
+  }
+  .introAnimationTextWrap {
+    transform: translateX(7px);
+    margin-top: 20px;
+  }
+}

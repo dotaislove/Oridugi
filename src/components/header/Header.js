@@ -13,7 +13,7 @@ function Header({ scrollY, scrollTop }) {
   }, [scrollY]);
 
   const handleTitleClick = () => {
-    scrollTop(); // 부모 컴포넌트의 scrollY 값을 0으로 리셋
+    scrollTop();
   };
   return (
     <div className="headerWrap">

@@ -1,6 +1,6 @@
 .mainInfoWrap {
   background-color: #27272c;
-  height: max(100dvh, 850px);
+  height: max(100dvh + 140px, 850px + 140px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,7 +15,8 @@
   height: 110px;
   left: 690px;
   top: -240px;
-  opacity: 0.4;
+  opacity: 0;
+  transform: translateY(5.56dvh);
 }
 
 .threeOfFootprints {
@@ -24,7 +25,7 @@
   height: 143px;
   top: -90px;
   left: 1250px;
-  opacity: 0.4;
+  opacity: 0;
 }
 
 .threeOfFlowers {
@@ -33,7 +34,7 @@
   height: 133px;
   top: 260px;
   left: -100px;
-  opacity: 0.4;
+  opacity: 0;
 }
 
 .mainInfoTitle {
@@ -47,8 +48,9 @@
   font-family: "NanumSquareRound", sans-serif;
   font-weight: 900;
   line-height: 130%;
-  opacity: 0.8;
+  opacity: 0;
   letter-spacing: -0.03em;
+  transform: translateY(5.56dvh);
 }
 
 .mainInfoTitleMiddleText {
@@ -58,8 +60,19 @@
   letter-spacing: 0.02em;
 }
 
+.mainInfoTitleMiddleText1 {
+  transition: all 1s;
+  transform: translateY(5.56dvh);
+  opacity: 0;
+  display: inline-block;
+}
+
 .mainInfoTitleMiddleText2 {
+  transition: all 1s;
+  transform: translateY(5.56dvh);
+  opacity: 0;
   color: #8261ec;
+  display: inline-block;
 }
 
 .mainInfoBodyGrid {
@@ -76,6 +89,7 @@
   width: 163px;
   object-fit: cover;
   margin-bottom: 40px;
+  opacity: 0;
 }
 
 .mainInfoTextHeader {
@@ -84,7 +98,7 @@
   margin-bottom: 20px;
   font-family: "NanumSquareRound", sans-serif;
   line-height: 130%;
-  opacity: 0.8;
+  opacity: 0;
   letter-spacing: -0.03em;
 }
 
@@ -92,7 +106,7 @@
   font-size: 18px;
   font-family: "NanumSquareRound", sans-serif;
   line-height: 150%;
-  opacity: 0.8;
+  opacity: 0;
   letter-spacing: -0.03em;
 }
 
@@ -233,7 +247,7 @@
   .mainInfoWrap {
     overflow: hidden;
     height: auto;
-    padding: 150px 0px 110px;
+    padding: 150px 0px 170px;
   }
   .mainInfoTitleMiddleText {
     font-size: 80px;

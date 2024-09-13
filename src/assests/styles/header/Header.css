@@ -110,7 +110,7 @@ NanumSquareRound
   }
 }
 
-@media (pointer: coarse) and (max-width: 600px) {
+@media (pointer: coarse) {
   .headerWrap {
     display: None;
   }
