@@ -44,7 +44,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
         x: [0, "100%", "100%"], // x축 이동
       }}
       transition={{
-        delay: 8,
+        delay: 8.5,
         duration: 1, // 전체 애니메이션 지속 시간
         times: [0, 0.5, 1], // 각 애니메이션 단계의 상대 시간
         ease: easeIn,
@@ -62,6 +62,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             duration: 8, // 전체 애니메이션 지속 시간
             times: [0, 0.0625, 0.9375, 1], // 각 애니메이션 단계의 상대 시간
             ease: easeIn,
+            delay: 0.5,
           }}
           style={{ position: "relative" }}
         >
@@ -104,6 +105,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             duration: 8, // 전체 애니메이션 지속 시간
             times: [0, 0.0625, 0.9375, 1], // 각 애니메이션 단계의 상대 시간
             ease: easeIn,
+            delay: 0.5,
           }}
           style={{ position: "relative" }}
         >
@@ -113,7 +115,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             transition={{
               duration: 4,
               ease: easeIn,
-              delay: 0.5,
+              delay: 1,
             }}
           ></motion.div>
         </motion.div>
@@ -128,6 +130,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             duration: 8, // 전체 애니메이션 지속 시간
             times: [0, 0.0625, 0.9375, 1], // 각 애니메이션 단계의 상대 시간
             ease: easeIn,
+            delay: 0.5,
           }}
           style={{ position: "relative" }}
         >
@@ -141,7 +144,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             transition={{
               duration: 1, // 전체 애니메이션 지속 시간
               times: [0, 0.5, 1], // 각 애니메이션 단계의 상대 시간
-              delay: 4.5,
+              delay: 5,
               ease: easeIn,
             }}
           >
@@ -196,7 +199,7 @@ function IntroAnimation({ onIntroAnimationComplete }) {
             transition={{
               duration: 3, // 전체 애니메이션 지속 시간
               times: [0, 0.166, 0.833, 1], // 각 애니메이션 단계의 상대 시간
-              delay: 5,
+              delay: 5.5,
               ease: easeIn,
             }}
           >
