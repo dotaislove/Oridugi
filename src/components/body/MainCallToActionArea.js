@@ -180,7 +180,7 @@ function MainCallToActionArea({ scrollY, ps }) {
                 오리더기의 부대원이 된 이상 누구 한분이라도 소외되지 않고
                 분위기에 잘 녹아들어
               </div>
-              <div>재마있게 게임할 수 있도록 돕겠습니다. 감사합니다. : )</div>
+              <div>재미있게 게임할 수 있도록 돕겠습니다. 감사합니다. : )</div>
             </div>
           </div>
           <div className="mainActionText less800px">
@@ -205,7 +205,7 @@ function MainCallToActionArea({ scrollY, ps }) {
                 </div>
                 기다리고 있겠습니다. 오리더기의 부대원이 된 이상 누구 한분이라도
                 <div>
-                  소외되지 않고 분위기에 잘 녹아들어 재마있게 게임할 수 있도록
+                  소외되지 않고 분위기에 잘 녹아들어 재미있게 게임할 수 있도록
                 </div>
                 <div> 돕겠습니다. 감사합니다. : )</div>
               </div>
@@ -223,7 +223,7 @@ function MainCallToActionArea({ scrollY, ps }) {
                 본인이 즐기는 컨텐츠를 적극적인 소통과 함께 ‘공유’ 하고
                 싶으시다면 부디 오리더기의 문을 두드려 주세요.&nbsp;저 포함 모든
                 부대원들이 기다리고 있겠습니다.&nbsp;오리더기의 부대원이 된 이상
-                누구 한분이라도 소외되지 않고 분위기에 잘 녹아들어 재마있게
+                누구 한분이라도 소외되지 않고 분위기에 잘 녹아들어 재미있게
                 게임할 수 있도록 돕겠습니다.&nbsp;감사합니다. : )
               </div>
             </div>
